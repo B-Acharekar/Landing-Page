@@ -1,0 +1,11 @@
+.header-content {
+    position: absolute; /* Positions the content on top of the image */
+    top: 50%; /* Positions vertically at 50% of the header's height */
+    transform: translateY(-50%); /* Centers the content vertically */
+    color: #fff; /* Sets text color to white for better contrast */
+  }
+  
+  .img-fluid {
+    opacity: 0.8; /* Optional: Reduce image opacity for better text visibility */
+  }
+  
