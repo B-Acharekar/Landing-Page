@@ -9,3 +9,32 @@
     opacity: 0.8; /* Optional: Reduce image opacity for better text visibility */
   }
   
+  .fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as desired */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: 0; /* Ensure it's below the checkout form */
+}
+
+.checkout-form {
+    display: none; /* Initially hide the div */
+}
+
+.checkout-form.fullscreen {
+    display: block;
+    position: fixed;
+    top: 55%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center adjustments */
+    width: 50%; /* Adjust width as desired */
+    height: 85vh; /* Allow scrolling within the form */
+    background-color: rgba(20, 20, 20, 0.8); /* Form background color with transparency */
+    padding: 20px; /* Optional padding for content */
+    overflow-x: hidden;
+    overflow-y: auto; /* Enable vertical scrollbar */
+    z-index: 10; /* Ensure it's on top of other elements */
+    border-radius: 10px; /* Optional: add rounded corners */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}

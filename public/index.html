@@ -13,154 +13,592 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="bg-success text-white">
+<body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+    <nav class="navbar fixed-top navbar-expand-lg bg-success shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">DreamNet</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <a class="navbar-brand text-white" href="#">DreamNet</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex mt-3 mt-lg-0" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+        <div class="justify-content-end navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link text-light active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <section class="d-flex flex-column justify-content-start text-start">
-    <img src="../src/assests/img/sleep-bg.jpg" alt="DreamNet" class="img-fluid" />
-    <div class="container header-content">
-      <h1>Build Your Dream Website - Effortlessly</h1>
-      <h2>Empower your creativity with our easy-to-use web builder.</h2>
-      <p>
-        No coding required! Drag, drop, and customize to create stunning websites that showcase your brand or passion
-        project. Get started today and experience the power of web building.
-      </p>
-      <div class="cta">
-        <h2>Limited Time Offer!</h2>
-        <p>Get 50% off on your first purchase.</p>
-        <a href="#" class="btn btn-outline-light">Avail the offer now !!</a>
+  <main>
+    <section id="home" class="pt-5 bg-success">
+      <div class="position-relative overflow-hidden d-flex text-white">
+        <div class="col-md-4 pt-1 order-2">
+          <img src="../src/assests/img/Remove background project.png" alt="Dream website builder image"
+            class="img-fluid opacity-100"/>
+        </div>
+        <div class="col-md-8 p-lg-5 mx-auto my-5">
+          <h1 class="display-3 fw-bold">Build Your Dream Website - Effortlessly</h1>
+          <h4 class="fw-normal mb-3">Empower your creativity with our easy-to-use web builder.</h4>
+          <div class="gap-3 justify-content-center lead fw-normal">
+            <h2>Limited Time Offer!</h2>
+            <p>Get 50% off on your first purchase.</p>
+            <button class="btn btn-outline-light toggle-fullscreen-button" target="" type="submit">Avail offer now !!</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+      <div class="container checkout-form fullscreen-overlay text-white">
+        <div class="py-5 text-center">
+          <div class="d-flex justify-content-end">
+            <button class="close-fullscreen btn-close btn-close-white btn-success" aria-label="Close"></button>
+          </div>
+          <h2>Checkout form</h2>
+        </div>
+                    
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-success">Your cart</span>
+              <span class="badge bg-success rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Product name</h6>
+                  <small class="text-body-secondary">Brief description</small>
+                </div>
+                <span class="text-body-secondary">$12</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Second product</h6>
+                  <small class="text-body-secondary">Brief description</small>
+                </div>
+                <span class="text-body-secondary">$8</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Third item</h6>
+                  <small class="text-body-secondary">Brief description</small>
+                </div>
+                <span class="text-body-secondary">$5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                <div class="text-success">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>EXAMPLECODE</small>
+                </div>
+                <span class="text-success">−$5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (USD)</span>
+                <strong>$20</strong>
+              </li>
+            </ul>
+    
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Promo code">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Billing address</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                  <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                </div>
+    
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Choose...</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" required>
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+              </div>
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+              </div>
+    
+              <hr class="my-4">
+    
+              <h4 class="mb-3">Payment</h4>
+    
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+    
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Name on card</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-body-light">Full name as displayed on card</small>
+                  <div class="invalid-feedback text-white">
+                    Name on card is required
+                  </div>
+                </div>
+    
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Credit card number</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Expiration</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-success btn-lg" type="submit">Continue to checkout</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="benefits">
-    <div class="container px-4 py-5" id="featured-3">
-      <h2 class="pb-2 border-bottom">Unlock Your Website's Potential</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-            <i class="fas fa-lightbulb"></i>
+    <section id="features">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Unlock Your Website's Potential</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Boost Creativity</h3>
+            <p>Bring your website ideas to life with our intuitive drag-and-drop builder and extensive design library.
+            </p>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Boost Creativity</h3>
-          <p>Bring your website ideas to life with our intuitive drag-and-drop builder and extensive design library.</p>
-        </div>
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-            <i class="fas fa-rocket"></i>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Effortless Launch</h3>
+            <p>Get your website online quickly and easily with our user-friendly publishing tools.</p>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Effortless Launch</h3>
-          <p>Get your website online quickly and easily with our user-friendly publishing tools.</p>
-        </div>
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-            <i class="fas fa-chart-line"></i>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Grow Your Audience</h3>
+            <p>Reach new visitors and convert them into leads with powerful built-in marketing features.</p>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Grow Your Audience</h3>
-          <p>Reach new visitors and convert them into leads with powerful built-in marketing features.</p>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Effortless Website Maintenance</h3>
+            <p>Maintain your website with ease: intuitive updates, built-in security, and performance optimization tools keep your site fresh, secure, and running smoothly.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="contact">
-    <div class="container px-4 py-5">
-      <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
-          <h4 class="" contenteditable="false">Not Yet Convinced?</h4>
-          <h2 class="pb-2 border-bottom" contenteditable="false">Read what people say about us</h2>
+    <section id="pricing">
+      <div class="container py-3">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 class="display-4 fw-normal text-body-emphasis pb-2 border-bottom">Pricing</h1>
+          <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with
+            this Bootstrap example. Its built with default Bootstrap components and utilities with little
+            customization.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-success">Sign up for free</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>20 users included</li>
+                  <li>10 GB of storage</li>
+                  <li>Priority email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-success">Get started</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-success">
+              <div class="card-header py-3 text-bg-success border-success">
+                <h4 class="my-0 fw-normal">Enterprise</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>30 users included</li>
+                  <li>15 GB of storage</li>
+                  <li>Phone and email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-success">Get started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%;"></th>
+                <th style="width: 22%;">Free</th>
+                <th style="width: 22%;">Pro</th>
+                <th style="width: 22%;">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Public</th>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Private</th>
+                <td></td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Permissions</th>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Sharing</th>
+                <td></td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Unlimited members</th>
+                <td></td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Extra security</th>
+                <td></td>
+                <td></td>
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <ul class="d-flex list-unstyled pt-4 align-center text-sm">
-          <li class="border-end border-dark">
-            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="wpx-100 rounded-circle mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
-            <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
-            <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Martha Stewart</h5>
-            <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Business Woman - New York</small>
-          </li>
-          <li class="border-end border-dark ms-4">
-            <img src="https://bootdey.com/img/Content/avatar/avatar4.png" class="wpx-100 rounded-circle mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
-            <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
-            <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Ariana Menage</h5>
-            <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Recording Artist - Los Angeles</small>
-          </li>
-          <li class="ms-4">
-            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="wpx-100 rounded-circle mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
-            <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
-            <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Sean Carter</h5>
-            <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Fund Manager - Chicago</small>
-          </li>
+    </section>
+
+    <section id="contact" class="border-top">
+      <div class="container py-3">
+        <div class="position-relative overflow-hidden d-flex">
+          <div class="col-md-4 order-2">
+            <img src="../src/assests/img/contact.jpg" alt="Dream website builder image"
+              class="img-fluid w-70 opacity-100"/>
+          </div>
+          <div class="col-md-8 p-lg-5 mx-auto my-5">
+            <h2 class="pt-3 pb-2">Want To Know More ?<br>Reach out to us!</h2>
+            <div class="gap-4 justify-content-center lead fw-normal">
+              <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse py-3" id="collapseExample">
+          <div class="card card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>Contact Us</h2>
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" rows="3" placeholder="Write your message here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </form>
+                </div>
+
+                <div class="col-md-6">
+                  <h3>Company Information</h3>
+                  <h5>Address:</h5>
+                  <address>
+                    123 Main Street<br>
+                    Anytown, CA 12345<br>
+                    USA
+                  </address>
+                  <h5>Phone:</h5> 
+                  <p>(555) 555-1212</p>
+                  <h5>Email:</h5>info@yourcompany.com</p>
+                  <h5>Social Media:</h5>
+                  <ul class="list-unstyled d-flex ms-auto mr-3">
+                    <li class="mx-2">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter" style="font-size: 20px;"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram" style="font-size: 20px;"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in" style="font-size: 20px;"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+    
+  </main>
+
+  <footer class="pt-5 px-5 border-top text-white bg-dark">
+    <div class="row">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="white" class="bi bi-cloud-drizzle-fill" viewBox="0 0 16 16">
+            <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m-3.5 1.5a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m.747-8.498a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973"/>
+          </svg>
+        </a>
+        <h2 class="text-body-success">DreamNet</h2>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Link</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-success">Home</a></li>
+          <li class="nav-item mb-2"><a href="#features" class="nav-link p-0 text-success">Features</a></li>
+          <li class="nav-item mb-2"><a href="#pricing" class="nav-link p-0 text-success">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-success">Contact us</a></li>
         </ul>
-  </div>
-  </section>
+      </div>
 
-  <section class="cta justify-content-center align-items-center">
-    <div class="container px-4 py-5">
-      <h2 class="pb-2" contenteditable="false">Turn your ideas into reality. </h2>
-      <a href="#" class="btn btn-outline-light">Start building with us!</a>
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-success" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </section>
 
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
 
-    <a href="/"
-      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32">
-        <use xlink:href="#bootstrap" />
-      </svg>
-    </a>
-
-    <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-    </ul>
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+      <p class="text-body-light">&copy; 2024 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex ms-auto mr-3">
+        <li class="mx-2">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter" style="font-size: 20px;"></i>
+          </a>
+        </li>
+        <li class="mx-2">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram" style="font-size: 20px;"></i>
+          </a>
+        </li>
+        <li class="mx-2">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in" style="font-size: 20px;"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
 
   <!-- Link to external JavaScript file -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../src/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
